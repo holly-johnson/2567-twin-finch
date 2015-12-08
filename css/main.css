@@ -27,6 +27,21 @@
 
 /*---------------------------TYPOGRAPHY---------------------------*/
 
+/*--------------------Body---------------------*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*--------------------Headings---------------------*/
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+}
+
+/*--------------------Buttons---------------------*/
+
+
 /*--------------------Forms---------------------*/
 
 footer label {
@@ -41,9 +56,15 @@ nav ul {
 	color: white;
 }
 
-nav li {
+nav li, li {
 	display: inline-block;
 }
+
+nav {
+	text-align: right;
+}
+
+nav ul li a
 
 /*---------------------------STRUCTURE---------------------------*/
 
@@ -51,10 +72,37 @@ section.call-out {
 	padding: 40px 0;
 }
 
+/*--------------------Header---------------------*/
+
+header#hero div.wrapper div.row {
+    padding: 20px 0;
+}
+
 /*---------------------------MEDIA---------------------------*/
 
 /*--------------------Sprites---------------------*/
 
+section#connect ul li:first-child {
+	background: url(../img/icon-facebook.png) no-repeat;
+}
+
+section#connect ul li:nth-child(2) {
+	background: url(../img/icon-twitter.png) no-repeat;
+}
+
+section#connect ul li:last-child {
+	background: url(../img/icon-googleplus.png) no-repeat;
+}
+
+section#connect ul li:hover {
+	background-position: 0 -48px;
+}
+
+section#connect ul li a {
+	width: 48px;
+    height: 48px;
+	display: inline-block;
+}
 
 /*--------------------Background Images---------------------*/
 

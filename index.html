@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/main.css"> 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
       function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
+          center: new google.maps.LatLng(45.525569, -122.676334),
+          zoom: 14,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
@@ -26,6 +28,15 @@
 
 <!-- TOC OF CONTENT 
 
+-------------------1. Hero & Nav
+-------------------2. Roasts
+---------------------------2.1. Featured Roasts
+---------------------------2.2. Coffee Review Callout
+---------------------------2.3. Other Roasts
+---------------------------2.4. Featured Article
+-------------------3. How It's Done/About Us
+-------------------4. Map
+-------------------5. Footer
 
 -->
 <!-- ===============HERO & NAV=============== -->	
@@ -34,11 +45,11 @@
  	<div class="wrapper">
     	<div class="row">
         	<figure class="col-2-5">
-            	<img src="img/logo.png" alt="logo">
+            	<img src="img/logo.png" alt="Twin Finch logo">
             </figure>
             <nav class="col-3-5">
             	<ul>
-                	<li><a href="#">Home</a></li>
+                	<li><a href="#hero">Home</a></li>
                     <li><a href="#roasts">Roasts</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#connect">Connect</a></li>
@@ -46,9 +57,9 @@
             </nav>
         </div>
         <div class="col-2-3 center-block">
-        	<p>Twin Finch Roastery is an authentic micro­roastery; small, dedicated, and highly focused on quality.</p>
+        	<h1>Twin Finch Roastery is an authentic micro­roastery; small, dedicated, and highly focused on quality.</h1>
             <div class="rule"></div>
-            <a>Buy Now</a>
+            <a href="#">Buy Now</a>
         </div>
     </div>
  </header>
@@ -58,14 +69,14 @@
 <section id="roasts">
 	<div class="wrapper">
     	<header>
-        	<h1>Roasts</h1>
+        	<h2>Roasts</h2>
             <div class="rule"></div>
             <p>We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe­quality cup at home.</p>
         </header>
         <div class="row">
             <section class="col-1-2">
                 <div id="product-callout">
-                    <img src="img/house-blend.jpg" alt=" "><!--replace with new image-->
+                    <!--insert image through css as background image-->
                     <p>Rated a 98 by coffeereview.com!</p>
                 </div>
                 <header>
@@ -97,7 +108,7 @@
 	
     <div class="call-out">
         <div class="wrapper">
-            <p>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” ­ Coffee Review</p>
+            <blockquote>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” ­ Coffee Review</blockquote>
         </div>
     </div>    
     
@@ -143,26 +154,26 @@
         </div>
         <p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in­store per request.</p>
 	</div>
-</section>
 
 <!-- ===============FEATURED ARTICLE=============== -->	
 
-<div class="call-out">
-	<div class="wrapper">
-		<header>
-        	<h2>Featured Article</h2>
-        </header>
-        <div class="rule"></div>       
-        <p><a href="#">How to Brew</a></p>
-	</div>
-</div>
+    <div class="call-out">
+        <div class="wrapper">
+            <header>
+                <h2>Featured Article</h2>
+            </header>
+            <div class="rule"></div>       
+            <p><a href="#">How to Brew</a></p>
+        </div>
+    </div>
+</section>
 
 <!-- ===============HOW IT'S DONE/ABOUT US=============== -->	
 
 <section id="about">
 	<div class="wrapper">
     	<header>
-        	<h1>How It's Done</h1>
+        	<h2>How It's Done</h2>
         </header>
         <div class="rule"></div>
         <p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
@@ -178,7 +189,7 @@
 <section id="connect">
 	<div class="wrapper">
     	<header>
-        	<h1>Connect With Us</h1>
+        	<h2>Connect With Us</h2>
         </header>
         <div class="rule"></div>
         <div class="row">
@@ -188,7 +199,7 @@
                         <input type="text" name="name"/>
                     </label>
                     <label>Email
-                        <input type="text" name="email"/>
+                        <input type="email" name="email"/>
                     </label>
                     <label>Send us a message.
                         <textarea rows="6"></textarea>
@@ -216,28 +227,28 @@
 	<div class="wrapper">
 		<div class="row">
             <figure class="col-1-4">
-                <img src="img/logo.png" alt="logo">
+                <a href="#"><img src="img/logo.png" alt="Twin Finch logo"></a>
             </figure>
             <div class="col-1-4">
                 <h4>Contact Info</h4>
-                <address><a href="http://www.google.com/maps">457 NW Market Street<br>
+                <address><a href="http://www.google.com/maps" target="_blank">457 NW Market Street<br>
                 Portland, OR</a></address>
             </div>
             <div class="col-1-4">
                 <h4>Site Map</h4>
                 <ul>
-                	<li><a href="#">Home</a></li>
+                	<li><a href="#hero">Home</a></li>
                     <li><a href="#roasts">Roasts</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#connect">Connect</a></li>
                 </ul>
             </div>
             <div class="col-1-4">
-                <h4>Signup for our newsletter</h4>
                 <form>
-                	<label>Email</label>
-                    	<input type="text" name="email"/>   
-                	<input type="submit" value="sign up now" id="sign-up-now"/>
+                	<label>Sign up for our newsletter
+                    	<input type="email" name="email"/>   
+                	</label>
+                    <input type="submit" value="sign up now" id="sign-up-now"/>
                 </form>
             </div>
 		</div>
