@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* Table of Contents  FIX ALL THIS!!  THE NUMBERS ARE WRONG
+/* Table of Contents  
 
 --------------------------------1 Typography
 --------------------------------------1.1 Body
@@ -19,7 +19,9 @@
 --------------------------------------5.2 Background Images
 --------------------------------6 Utility
 --------------------------------------6.1 Colors
---------------------------------------6.1 Floats, Positions, Displays
+--------------------------------------6.2 Floats, Positions, Displays
+--------------------------------------6.3 Single Column
+--------------------------------------6.4 Partial Column
 --------------------------------7 Media Querie
 --------------------------------------7.1 Typography
 --------------------------------------7.2 Structure 
@@ -87,7 +89,7 @@ blockquote {
     font-style: italic;
     font-weight: 100;
     line-height: 40px;
-    padding: 40px 10px 0 10px;
+    padding: 40px 10px 0;
 }
 
 /*--------------------Headings---------------------*/
